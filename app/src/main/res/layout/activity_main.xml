@@ -123,7 +123,7 @@
             android:id="@+id/listresultsheet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:itemCount="0"
+            tools:itemCount="3"
             tools:listitem="@layout/result_items"
             />
         <RelativeLayout

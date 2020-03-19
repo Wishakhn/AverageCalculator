@@ -45,28 +45,26 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun findGradeforEach(obtnums: Int, tnums: Int): String {
-        val res : Int = ((obtnums/tnums))
+        val res = ((obtnums.toDouble()/tnums)*100)
         Log.i("OBTAINED Percentage",""+res)
 
-        var g =""
-        if (res> 90 || res== 100){
+        var g ="Shameful"
+        if (res > 90 || res.equals(100)){
             g = "A+"
         }
-        else  if (res> 80 || res== 90){
+        else  if (res> 80 || res.equals(90)){
             g = "A"
         }
-        else if (res> 70 || res== 80){
-                g = "B+"
-            }
-        else  if (res> 60 || res== 70){
+        else if (res> 70 || res.equals(80)){
+            g = "B+"
+        }
+        else  if (res> 60 || res.equals(70)){
             g = "B"
         }
-        else  if (res> 50 || res== 60){
+        else  if (res> 50 || res.equals(60)){
             g = "C+"
         }
-        else{
-            g ="Shamefull"
-        }
+
         return g
     }
 
@@ -89,7 +87,8 @@ class MainActivity : AppCompatActivity() {
 
         val totalgrade = findGradeforEach(obtmarks,totalnums)
         grade.setText(totalgrade)
-        var prcent = (obtmarks/totalnums) * 100
+        var prcent = ((obtmarks.toDouble()/totalnums)*100)
+        Log.i("PERCENT",""+prcent)
         percent.setText(""+prcent+"%")
 
     }

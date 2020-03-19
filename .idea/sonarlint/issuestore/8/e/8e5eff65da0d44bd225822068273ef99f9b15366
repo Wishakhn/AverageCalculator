@@ -1,5 +1,5 @@
 
+rkotlin:S101"VRename class "obtainedViewHolder" to match the regular expression ^[A-Z][a-zA-Z0-9]*$.(è’ÿèûÿÿÿÿ
+skotlin:S101"\Rename class "displayNumberlistAdapter" to match the regular expression ^[A-Z][a-zA-Z0-9]*$.(¾æ×ñ
 ikotlin:S117"RRename this local variable to match the regular expression "^[_a-z][a-zA-Z0-9]*$".(³™ºÁ
 hkotlin:S117"RRename this local variable to match the regular expression "^[_a-z][a-zA-Z0-9]*$".(à—ö\
-skotlin:S101"\Rename class "displayNumberlistAdapter" to match the regular expression ^[A-Z][a-zA-Z0-9]*$.(¾æ×ñ
-rkotlin:S101"VRename class "obtainedViewHolder" to match the regular expression ^[A-Z][a-zA-Z0-9]*$.(è’ÿèûÿÿÿÿ

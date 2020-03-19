@@ -24,7 +24,7 @@ class displayNumberlistAdapter(private val list: List<SubjectNumbers>) :
         var obtNums = subject_is.getObtNums()
         var totalNums = subject_is.getTotalNums()
         var grades = subject_is.getGrade()
-        var display_text = "Subject "+subjName+": \n Marks= "+obtNums+"/"+totalNums+"\n Grade= "+grades
+        var display_text = "Subject "+subjName+": \n \n Marks =  "+obtNums+"/"+totalNums+"\n Grade =  "+grades
         holder.obtsubjectnumbers?.setText(display_text)
     }
 
