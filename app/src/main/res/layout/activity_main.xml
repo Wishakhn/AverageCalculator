@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:singleLine="true"
                 android:gravity="center"
-                android:hint="100"
+                android:hint="0"
                 android:imeOptions="actionDone"
                 android:textColor="@color/colorPrimaryDark"
                 />
@@ -81,7 +81,7 @@
                 android:layout_height="wrap_content"
                 android:singleLine="true"
                 android:gravity="center"
-                android:hint="30"
+                android:hint="0"
                 android:textColor="@color/colorPrimaryDark"
                 />
             <TextView
@@ -100,7 +100,7 @@
                 android:layout_height="wrap_content"
                 android:singleLine="true"
                 android:gravity="center"
-                android:hint="30"
+                android:hint="0"
                 android:textColor="@color/colorPrimaryDark"
                 />
             <ImageView
@@ -145,7 +145,7 @@
                 android:layout_height="wrap_content"
                 android:singleLine="true"
                 android:gravity="center"
-                android:hint="30"
+                android:hint="0"
                 android:enabled="false"
                 android:textColor="@color/colorPrimaryDark"
                 />
@@ -166,7 +166,7 @@
                 android:singleLine="true"
                 android:gravity="center"
                 android:enabled="false"
-                android:hint="30"
+                android:hint="0"
                 android:textColor="@color/colorPrimaryDark"
                 />
 
@@ -211,7 +211,7 @@
                 android:layout_height="wrap_content"
                 android:singleLine="true"
                 android:gravity="center"
-                android:hint="90%"
+                android:hint="0%"
                 android:enabled="false"
                 android:layout_alignParentRight="true"
                 android:textColor="@color/colorPrimaryDark"
@@ -228,14 +228,30 @@
        android:layout_weight="1"
        android:paddingHorizontal="10dp"
        android:paddingVertical="7dp"
+       android:weightSum="2.1"
        >
        <Button
-           android:layout_width="match_parent"
+           android:layout_width="0dp"
+           android:layout_weight="1.025"
            android:layout_height="match_parent"
            android:background="@color/colorPrimary"
            android:text="CALCULATE"
            android:onClick="calculate_and_display"
            android:textColor="@color/cream"
+           android:textSize="20sp"
+ />
+       <View
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="0.05"/>
+       <Button
+           android:layout_width="0dp"
+           android:layout_weight="1.025"
+           android:layout_height="match_parent"
+           android:background="@color/colorAccent"
+           android:text="RESET"
+           android:onClick="resetall"
+           android:textColor="@color/blackforest"
            android:textSize="20sp"
  />
    </LinearLayout>

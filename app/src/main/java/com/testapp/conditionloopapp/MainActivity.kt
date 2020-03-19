@@ -92,4 +92,20 @@ class MainActivity : AppCompatActivity() {
         percent.setText(""+prcent+"%")
 
     }
+
+    fun resetall(view: View) {
+        textengnum.setText("")
+        engnum.setText("")
+        totlnum.setText("")
+        percent.setText("")
+        resobtnum.setText("")
+        restotlnum.setText("")
+        grade.setText("")
+        obtNumbers.clear()
+        adapterIs?.notifyDataSetChanged()
+        listnumbersCycler.adapter = adapterIs
+        resadapterIs?.notifyDataSetChanged()
+        listresultsheet.adapter = resadapterIs
+
+    }
 }
